@@ -1,0 +1,156 @@
+.container {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr 0.6fr 1.1fr 0.5fr 1.3fr 0.8fr 1.4fr;
+  grid-template-rows: 1.2fr 0.8fr 1fr 1.1fr 0.9fr;
+  grid-auto-columns: 1fr;
+  gap: 20px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "time1 developerBox developerBox . . dsaBox dsaBox ."
+    "time2 developerBox developerBox projectBox projectBox dsaBox dsaBox ."
+    "time3 developerBox developerBox projectBox projectBox aiBox aiBox aiBox"
+    "time4 . . projectBox projectBox networkBox networkBox brainstormBox"
+    "time5 cloudBox cloudBox cloudBox macbetBox1 macbetBox1 macbetBox2 macbetBox2";
+  width: 95%;
+  height: 90%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px;
+  background: #ffffff;
+  box-shadow: 0px 2px 9px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.time1 {
+  grid-area: time1;
+}
+
+.time2 {
+  grid-area: time2;
+}
+
+.time3 {
+  grid-area: time3;
+}
+
+.time4 {
+  grid-area: time4;
+}
+
+.time5 {
+  grid-area: time5;
+}
+
+.developerBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.3fr 0.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+  grid-area: developerBox;
+
+  background: rgba(206, 136, 136, 0.53);
+  border-radius: 10px;
+  border-left: 8px solid #ce888887;
+  display: flex;
+}
+
+.projectBox {
+  grid-area: projectBox;
+  background: #b7b4d9;
+  border-radius: 10px;
+  border-left: 8px solid #576bb0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dsaBox {
+  grid-area: dsaBox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    123.32deg,
+    rgba(144, 2, 180, 0.58) 0%,
+    rgba(0, 0, 0, 0.58) 146.04%
+  );
+  border-radius: 10px;
+  color: #fff;
+  border-left: 8px solid #d291dd;
+}
+
+.aiBox {
+  grid-area: aiBox;
+  background: linear-gradient(
+    136.37deg,
+    rgba(255, 197, 0, 0.58) 5.88%,
+    rgba(194, 21, 0, 0.58) 70.55%
+  );
+  border-radius: 10px;
+  border-left: 8px solid #ffe68e;
+  color: #fff;
+  display: flex;
+}
+
+.networkBox {
+  grid-area: networkBox;
+  background: linear-gradient(
+    123.32deg,
+    rgba(27, 180, 2, 0.58) 0%,
+    rgba(0, 0, 0, 0.58) 146.04%
+  );
+  border-radius: 10px;
+  border-left: #bef890 8px solid;
+  display: flex;
+  color: #fff;
+}
+
+.brainstormBox {
+  grid-area: brainstormBox;
+  background: #b4d7d9;
+  border-radius: 10px 0px 0px 10px;
+  border-left: 8px solid #57a0b0;
+  display: flex;
+}
+
+.cloudBox {
+  grid-area: cloudBox;
+  background: linear-gradient(135deg, #b24592 0%, #f15f79 100%);
+  border-radius: 10px;
+  border-left: 8px solid #f890ed;
+  display: flex;
+  color: #fff;
+}
+
+.macbetBox1 {
+  grid-area: macbetBox1;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0) 117.05%,
+    #fff
+  );
+  border-radius: 10px;
+}
+
+.macbetBox2 {
+  grid-area: macbetBox2;
+  color: #fff;
+  background: linear-gradient(
+      90.03deg,
+      #25090e -8.15%,
+      rgba(119, 77, 85, 0) 117.01%
+    ),
+    #733d47;
+  border-radius: 10px;
+}
+
+.spanElement {
+  color: #bf9b9b;
+}
